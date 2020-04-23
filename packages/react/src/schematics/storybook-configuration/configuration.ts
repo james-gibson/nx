@@ -7,7 +7,8 @@ export default function(schema: StorybookConfigureSchema): Rule {
       name: schema.name,
       uiFramework: '@storybook/react',
       configureCypress: schema.configureCypress,
-      js: schema.js
+      js: schema.js,
+      linter: schema.linter
     })
   ]);
 }
